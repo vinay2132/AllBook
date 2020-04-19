@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>About page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="handle.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="google-signin-client_id" content="395673274757-i0m8kqh7eir7n1fb6jvafinf962jn57p.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <!--<i class="far fa-clock" style="font-size:120px;color:#2196F3"></i>-->
+            <i class="fas fa-bars" style="font-size:40px;color:#2196F3"></i>
+      </label>
+        <label class="logo">AllBook</label>
+        <ul>
+            <li><a class="active" href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log In</a></li>
+        </ul>
+    </nav>
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="form.php" method="POST">
+
+            <div class="container">
+                <h1>Log In</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <label for="username"><b>UserName</b></label>
+                <input type="text" placeholder="Enter UserName" name="username" required>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="pswrepeatt"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="pswrepeatt" required>
+
+                <label>
+              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+
+                <p>By creating an account you agree to our <a href="terms_andcon.html" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Log In</button>
+                </div>
+                <div class="g-signin2" data-onsuccess="SignIn with Google"></div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <div class="tcw">
+        <div class="port-im-w">
+            <img src="Paytm-Bus-Offer-100-Cashback-Codes.jpg">
+        </div>
+        <div class="pcw">
+            <h1>Hi, thanks for visiting my site.</h1>
+            <p>With over a decade of development experience in a number of industries I realized that the typical product creation process between clients and developers was flawed. All too often developers rarely communicate to clients throughout the development
+                stage, resulting in a final product that fails to reach the goal sought by the customer and end user.
+            </p>
+
+            <p>For this reason I decided to utilize a completely different development pattern that focuses on highly focused communication and transparent design patterns. When I take on a project not only do I work to craft the application according to
+                the client's specifications, I give daily updates to ensure that the project is aligning properly with the client's goals. The end result is the right product, delivered on time, and on budget.</p>
+            <p><b><h2>OFFER CODE:12Kr43H2</h2></b></p>
+        </div>
+    </div>
+    <div class="chat">
+        <a href="AI.html">
+            <div class="chaticon" style="background-image: url(215226424Untitled-3-512.png) ;"></div>
+        </a>
+    </div>
+</body>
+
+</html>

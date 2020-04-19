@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Services page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="handle.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="google-signin-client_id" content="395673274757-i0m8kqh7eir7n1fb6jvafinf962jn57p.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker3.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<y>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <!--<i class="far fa-clock" style="font-size:120px;color:#2196F3"></i>-->
+            <i class="fas fa-bars" style="font-size:40px;color:#2196F3"></i>
+      </label>
+        <label class="logo">AllBook</label>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="active" href="login.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="companyreg.html">Company Register</a></li>
+        </ul>
+        <div class="bussscontactss1"></div>
+        <div class="hero-text">
+            <br>
+            <br>
+            <b><h1 style="font: size 100;">We’d love to link with us</h1></b>
+            <br><br>
+            <p>
+                <h3>
+                    This is the place where you can register your busses and can provide services to people.</p>
+            </h3>
+            <!-- <nav1><i class="fas fa-phone" style="font-size:140px;color:#2196F3"></i></nav1>
+            <div class="input-container11">
+            <i class="fa fa-envelope icon11"></i>
+            <input class="input-field11" type="text" placeholder="Email" name="email" required>
+          </div>-->
+            <form action="busdetails.php" method="POST">
+                <div class="busss">
+                    <i class="fas fa-city cityico "></i>
+                    <input class="busarrange" type="text " placeholder="FROM" id="froms" name="froms" required>
+                </div>
+                <div class="busss">
+                    <i class="fas fa-city cityico "></i>
+                    <input class="busarrange" type="text " placeholder="TO" id="tos" name="tos" required>
+                </div>
+                <div class="busss">
+                    <i class="fas fa-bus-alt cityico "></i>
+                    <input class="busarrange" type="text " placeholder="Bus No" id="busno" name="busno" required>
+                </div>
+                <div class="busss">
+                    <i class="fab fa-servicestack cityico"></i>
+                    <select class="busarrange" name="bustype" required>
+                    <option value=""disabled selected hidden >Bus Type </option>
+                    <option value="semisleeper">Only Semisleeper(seats-24)</option>
+                    <option value="sleeper">Only Sleeper(seats-32)</option>
+                    <option value="combined">Both of Semisleeper and Sleeper</option>
+                    <option value="none">Not mentioned above</option> 
+                  </select>
+                </div>
+                <div class="busss">
+                    <i class="fas fa-exclamation cityico "></i>
+                    <input class="busarrange" type="text " placeholder="Type of bus if not mentioned above" id="outhertype" name="outhertype">
+                </div>
+
+                <div class="busss date" id='datepicker'>
+                    <i class="fa fa-calendar cityico" aria-hidden="true"></i>
+                    <input class="busarrange" type="text " placeholder="ONWARD DATE" id="busdate" name="busdate" required>
+                    <div class="input-group-addon"></div>
+                </div>
+                <div class="busss">
+                    <i class="far fa-building cityico "></i>
+                    <input class="busarrange" type="text " placeholder="Company Name" id="companyname" name="companyname" required>
+                </div>
+                <div class="busss">
+                    <i class="fas fa-phone-square-alt cityico "></i>
+                    <input class="busarrange" type="text " placeholder="Driver phone-no" id="driverno" name="driverno" required>
+                </div>
+                <div class="busss">
+                    <i class="fas fa-phone-office cityico "></i>
+                    <input class="busarrange" type="text " placeholder="Emergency-no if any" id="emergencyno" name="emergencyno" required>
+                </div>
+                <div class="busss">
+                    <i class="fas fa-address-card cityico "></i>
+                    <textarea class="busarrange" placeholder="Compleat address of the Company" id="addresscom" name="addresscom" row=" 14 " style="height:200px " required></textarea>
+                </div>
+                <button type="submit " class="btn11 ">Save bus information</button>
+            </form>
+
+            <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js "></script>
+            <script>
+                $(function() {
+                    $('#datepicker').datepicker({
+                        format: "dd/mm/yyyy ",
+                        autoclose: true,
+                        todayHighlight: true,
+                        showOtherMonths: true,
+                        selectOtherMonths: true,
+                        autoclose: true,
+                        changeMonth: true,
+                        changeYear: true,
+                        orientation: "button "
+                    });
+                });
+            </script>
+        </div>
+
+        <div class="chat ">
+            <a href="AI.html ">
+                <div class="chaticon " style="background-image: url(215226424Untitled-3-512.png) ; "></div>
+            </a>
+        </div>

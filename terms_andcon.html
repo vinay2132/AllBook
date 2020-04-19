@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Terms and conditions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="handle.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta name="google-signin-client_id" content="395673274757-i0m8kqh7eir7n1fb6jvafinf962jn57p.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <!--<i class="far fa-clock" style="font-size:120px;color:#2196F3"></i>-->
+            <i class="fas fa-chevron-circle-down"style="font-size:40px;color:#2196F3" ></i> 
+      </label>
+        <label class="logo">AllBook</label>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="login.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log In</a></li>
+        </ul>
+    </nav>
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <form class="modal-content" action="form.php" method="POST">
+
+            <div class="container">
+                <h1>Log In</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <label for="username"><b>UserName</b></label>
+                <input type="text" placeholder="Enter UserName" name="username" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="pswrepeatt"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="pswrepeatt" required>
+
+                <label>
+              <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+            </label>
+
+                <p>By creating an account you agree to our <a href="terms_andcon.html" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Log In</button>
+                </div>
+                <div class="g-signin2" data-onsuccess="SignIn with Google"></div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <br>
+    <br>
+
+    <h1>Terms and Privacy</h1>
+
+    <br>
+    <br>
+    <div class="toc_container">
+        <ul class="toc_list">
+            <div class="contex">
+                <li>
+                    <a href="#What_Is_A_Privacy_Policy" class="space_h2">
+                        <span class="toc_text_position">1.</span>
+                        <span class="toc_text_title">What is a Privacy Policy?</span>
+                    </a>
+                </li>
+                <br>
+                <li>
+                    <a href="#Why_You_Need_A_Privacy_Policy?" class="space_h2">
+                        <span class="toc_text_position">2.</span>
+                        <span class="toc_text_title">Why you Need a Privacy Policy?</span>
+                    </a>
+                </li>
+        </ul>
+        </div>
+
+
+        <br>
+        <br>
+        <h2 id="What_Is_A_Privacy_Policy">What is a Privacy Policy?</h2>
+        <br>
+        <br>
+        <p> A Privacy Policy is a statement or a legal document that states how a company or website<strong> collects</strong>, <strong>handles</strong> and <strong>processes </strong>data of its customers and visitors. It explicitly describes whether that
+            information is kept confidential, or is shared with or sold to third parties.</p>
+        <p>Personal information about an individual may include the following:</p>
+        <br>
+        <br>
+        <ul>
+            <li>Name</li>
+            <li>Address</li>
+            <li>Email</li>
+            <li>Phone number</li>
+            <li>Age</li>
+            <li>Sex</li>
+            <li>Marital status</li>
+            <li>Race</li>
+            <li>Nationality</li>
+            <li>Religious beliefs</li>
+        </ul>
+        <br>
+        <br>
+        <p>For example, an excerpt from <a href="about.html"><strong>Pinterest's</strong></a> Privacy Policy agreement clearly describes the information Pinterest collects from its users as well as from any other source that users enable Pinterest to gather
+            information from. The information that the user voluntarily gives includes names, photos, pins, likes, email address, and/or phone number etc., all of which is regarded as<strong> personal information</strong>.</p>
+        <br>
+        <br>
+        <p>Additionally, Pinterest also states that it collects user location data from mobile devices, and if someone makes a purchase on Pinterest, payment and contact information - including an address and phone number - will be collected. If users buy
+            products or services for others, Pinterest gathers their contact information and shipping details, too.</p>
+        <br>
+        <br>
+        <p>Users may also give Pinterest permission to access information that is shared with other websites like Facebook and Twitter by linking their Pinterest account with them. This information would also include information about their friends and followers.
+            The account settings have information about how much access Pinterest has to their users' data.</p>
+        <br>
+        <br>
+        <p>In sum, a Privacy Policy is where you let your users know all about how you make sure their privacy is respected by your business practices.</p>
+        <br>
+        <br>
+        <h2 id="Why_You_Need_A_Privacy_Policy?">Why you Need a Privacy Policy?</h2>
+        <br>
+        <br>
+        <p> Privacy is not a new concept. Humans have always desired privacy in their social as well as private lives. But the idea of privacy as a human right is a relatively modern phenomenon.</p>
+        <br>
+        <br>
+        <p>Around the world, laws and regulations have been developed for the protection of data related to government, education, health, children, consumers, financial institutions, etc. </p>
+        <br>
+        <br>
+        <p>This data is critical to the person it belongs to. Data privacy and security binds individuals and industries together and runs complex systems in our society. From credit card numbers and social security numbers to email addresses and phone numbers,
+            our sensitive, personally identifiable information is important. This sort of information in unreliable hands can potentially have far-reaching consequences. </p>
+        <br>
+        <br>
+        <p>Companies or websites that handle customer information are required to publish their Privacy Policies on their business websites. If you own a website, web app, mobile app or desktop app that collects or processes user data, you most certainly
+            will have to post a Privacy Policy on your website (or give in-app access to the full Privacy Policy agreement). </p>
+        <br>
+        <br>
+        <p>There are several reasons for a website to post its Privacy Policy agreement on its website. </p>
+        <br>
+        <br>
+        <p>Here are some of the main reasons: </p>
+        <br>
+        <br>
+        <ul>
+            <li>Required by the law</li>
+            <li>Required by third party services</li>
+            <li>Increases Transparency</li>
+
+        </ul>
+        <br>
+        <br>
+        <p>Let's take a look at each of these reasons in more depth.</p>
+        <br>
+        <br>
+
+    </div>
+    <div class="chat">
+        <a href="AI.html">
+            <div class="chaticon" style="background-image: url(215226424Untitled-3-512.png) ;"></div>
+        </a>
+    </div>

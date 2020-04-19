@@ -1,0 +1,1296 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat, sans-serif;
+}
+
+nav {
+    background: lightgray;
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: black;
+    font-size: 47px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: lighter;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,
+a:hover {
+    background: #1b9bff;
+    transition: .9s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #6d747a;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+.hero-image {
+    background-image: url("online-purchase-booking-tickets-airplane-bus-train-travel-around-world-countries-recreation-92617510.jpg");
+    background-color: #0082e6;
+    height: 10000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.4;
+    background-attachment: fixed;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    display: block;
+    width: 70%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(94, 201, 243);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.container:hover .overlay {
+    width: 70%;
+}
+
+.text {
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.itw {
+    position: absolute;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 1px;
+    padding-right: 100px;
+}
+
+.logow img {
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.offer-train {
+    text-align: center;
+    position: absolute;
+    top: 110%;
+    left: 55%;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+
+/*outher type of button
+.button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: skyblue;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.button:hover {
+    background-color: light#64e764
+}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+*/
+
+.button {
+    background-color: transparent;
+    border: none;
+    color: transparent;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: transparent;
+    color: black;
+    border: 2px solid transparent;
+    padding: 10px 24px;
+}
+
+.button1:hover {
+    background-color: #1b9bff;
+    color: white;
+}
+
+.tcw {
+    display: grid;
+    grid-template-columns: 1fx 1fx;
+}
+
+.port-im-w img {
+    width: 80%;
+}
+
+.pcw {
+    /*padding: 30px;
+    /*text-align: center;*/
+    position: relative;
+    top: -3%;
+    left: 135%;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.offer-train1 {
+    text-align: center;
+    position: absolute;
+    top: 175%;
+    left: 55%;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.itw1 {
+    position: absolute;
+    top: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 1px;
+    padding-right: 100px;
+}
+
+.logow1 img {
+    width: 150%;
+    margin-bottom: 20px;
+}
+
+.text1 {
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+}
+
+.container1 {
+    position: relative;
+    width: 50%;
+}
+
+.image1 {
+    display: block;
+    width: 70%;
+    height: auto;
+}
+
+.overlay1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(94, 201, 243);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.container1:hover .overlay1 {
+    width: 150%;
+}
+
+.about {
+    text-align: unset;
+    position: absolute;
+    top: 75%;
+    left: 57%;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    color: black;
+    padding-right: 0px;
+}
+
+.contactss {
+    background-image: url("realistic-elegant-geometric-shapes-background_23-2148416398.jpg");
+    background-color: #0082e6;
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.4;
+    background-attachment: fixed;
+}
+
+.icon {
+    width: 15px;
+    height: 55px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 0 100px;
+}
+
+.iconloc {
+    width: 5px;
+    height: 115px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 10px 100px;
+    padding-left: 20px;
+    right: 1155%;
+}
+
+.contex {
+    font-family: National-Book, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: gray;
+    margin: 0;
+    padding: 0 50px;
+}
+
+.input-container11 {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon11 {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+.input-field11 {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.input-field11:focus {
+    border: 2px solid dodgerblue;
+}
+
+
+/* Set a style for the submit button */
+
+.btn11 {
+    background-color: dodgerblue;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn11:hover {
+    opacity: 1;
+    cursor: pointer;
+    background-color: rgb(0, 131, 253);
+}
+
+.placehol {
+    left: 0;
+    top: 142px;
+    color: #b3b3b3;
+    pointer-events: none;
+    transition: top .2s ease, font-size .2s ease, padding .2s ease;
+    font-size: 16px;
+    padding: 0 10px 10px 46px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Full-width input fields */
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+/* Add a background color when the inputs get focus */
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Set a style for all buttons */
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+button:hover {
+    opacity: 1.4;
+}
+
+
+/* Extra styles for the cancel button */
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+
+/* Float cancel and signup buttons and add an equal width */
+
+.cancelbtn,
+.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+
+/* Add padding to container elements */
+
+.container {
+    padding: 16px;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: darkgray;
+    padding-top: 50px;
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* Style the horizontal ruler */
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+
+/* The Close Button (x) */
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+
+/* Clear floats */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Change styles for cancel button and signup button on extra small screens */
+
+@media screen and (max-width: 300px) {
+    .cancelbtn,
+    .signupbtn {
+        width: 100%;
+    }
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
+
+a {
+    color: dodgerblue;
+}
+
+.toc_container {
+    padding: 1.25rem;
+    border: 1px solid #e5e5ed;
+    margin-bottom: 2.5rem;
+    border-radius: .25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(70, 72, 85, .12);
+    font-weight: 600;
+}
+
+.toc_container ul {
+    padding: 0 1rem;
+    list-style: none;
+}
+
+.toc_list_container .toc_list {
+    margin: 0;
+}
+
+
+/* radio button ............*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.ratrad {
+    position: absolute;
+    top: 77%;
+    left: 20%;
+    transform: translate(-50%, -50%) rotateY(180deg);
+    display: flex;
+}
+
+.ratrad input {
+    display: none;
+}
+
+.ratrad label {
+    display: block;
+    cursor: pointer;
+    width: 50px;
+}
+
+.ratrad label::before {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: 50px;
+    color: lightslategrey;
+}
+
+.ratrad label::after {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: absolute;
+    display: block;
+    font-size: 52px;
+    color: #1f9cff;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+}
+
+.ratrad label:hover:after,
+.ratrad label:hover~label:after,
+.ratrad input:checked~label:after {
+    opacity: 1;
+}
+
+.contex1 {
+    font-family: National-Book, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    line-height: 0;
+    color: gray;
+    margin: 0;
+    padding: 170px 50px;
+}
+
+.input-container111 {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: grid;
+    width: 25%;
+    padding: 10px 0px;
+    /* margin-bottom: 15px;*/
+    padding-bottom: 50px;
+}
+
+.hero-text11 {
+    text-align: center;
+    position: absolute;
+    top: 92%;
+    left: 15.5%;
+    font-size: 26px;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    color: gray;
+}
+
+.input-container112 {
+    text-align: center;
+    position: absolute;
+    top: 119%;
+    left: 32.5%;
+    font-size: 26px;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    color: gray;
+}
+
+.input-container113 {
+    text-align: center;
+    position: absolute;
+    top: 204%;
+    left: 24.5%;
+    font-size: 26px;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    color: gray;
+}
+
+
+/* 2nd star*/
+
+.ratrad1 {
+    position: absolute;
+    top: 162%;
+    left: 20%;
+    transform: translate(-50%, -50%) rotateY(180deg);
+    display: flex;
+}
+
+.ratrad1 input {
+    display: none;
+}
+
+.ratrad1 label {
+    display: block;
+    cursor: pointer;
+    width: 50px;
+}
+
+.ratrad1 label::before {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: 50px;
+    color: lightslategrey;
+}
+
+.ratrad1 label::after {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: absolute;
+    display: block;
+    font-size: 52px;
+    color: #1f9cff;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+}
+
+.ratrad1 label:hover:after,
+.ratrad1 label:hover~label:after,
+.ratrad1 input:checked~label:after {
+    opacity: 1;
+}
+
+
+/*3rd star*/
+
+.ratrad2 {
+    position: absolute;
+    top: 244%;
+    left: 20%;
+    transform: translate(-50%, -50%) rotateY(180deg);
+    display: flex;
+}
+
+.ratrad2 input {
+    display: none;
+}
+
+.ratrad2 label {
+    display: block;
+    cursor: pointer;
+    width: 50px;
+}
+
+.ratrad2 label::before {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: 50px;
+    color: lightslategrey;
+}
+
+.ratrad2 label::after {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: absolute;
+    display: block;
+    font-size: 52px;
+    color: #1f9cff;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+}
+
+.ratrad2 label:hover:after,
+.ratrad2 label:hover~label:after,
+.ratrad2 input:checked~label:after {
+    opacity: 1;
+}
+
+
+/*descriptio feedback2*/
+
+.input-container2 {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: grid;
+    width: 45%;
+    padding: 10px 0px;
+    /* margin-bottom: 15px;*/
+    padding-bottom: 20px;
+}
+
+.contex2 {
+    font-family: National-Book, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    line-height: 0;
+    color: gray;
+    margin: 0;
+    padding: 0px 50px;
+}
+
+.hero-text2 {
+    text-align: center;
+    position: absolute;
+    top: 148%;
+    left: 24.5%;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    color: gray;
+}
+
+.input-container3 {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: grid;
+    width: 45%;
+    padding: 200px 0px;
+    /* margin-bottom: 15px;*/
+    padding-bottom: 20px;
+}
+
+.hero-text3 {
+    text-align: center;
+    position: absolute;
+    top: 226%;
+    left: 24.5%;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    color: gray;
+}
+
+.g-signin2 {
+    margin-left: 179px;
+    margin-top: 7px;
+}
+
+.hero-text4 {
+    text-align: center;
+    position: absolute;
+    top: 307%;
+    left: 24.5%;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    color: gray;
+}
+
+.input-container114 {
+    text-align: center;
+    position: absolute;
+    top: 284%;
+    left: 24.5%;
+    font-size: 26px;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    color: gray;
+}
+
+.ratrad3 {
+    position: absolute;
+    top: 324%;
+    left: 20%;
+    transform: translate(-50%, -50%) rotateY(180deg);
+    display: flex;
+}
+
+.ratrad3 input {
+    display: none;
+}
+
+.ratrad3 label {
+    display: block;
+    cursor: pointer;
+    width: 50px;
+}
+
+.ratrad3 label::before {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: relative;
+    display: block;
+    font-size: 50px;
+    color: lightslategrey;
+}
+
+.ratrad3 label::after {
+    content: '\f005';
+    font-family: fontAwesome;
+    position: absolute;
+    display: block;
+    font-size: 52px;
+    color: #1f9cff;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+}
+
+.ratrad3 label:hover:after,
+.ratrad3 label:hover~label:after,
+.ratrad3 input:checked~label:after {
+    opacity: 1;
+}
+
+.hero-text5 {
+    text-align: center;
+    position: absolute;
+    top: 385%;
+    left: 24.5%;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    color: gray;
+}
+
+.input-container115 {
+    text-align: center;
+    position: absolute;
+    top: 363%;
+    left: 24.5%;
+    font-size: 26px;
+    height: 600px;
+    transform: translate(-50%, -50%);
+    color: gray;
+}
+
+
+/*testing .....*/
+
+.busbutton2 {
+    background-color: white;
+    border: none;
+    color: #1b9bff;
+    padding: 45px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 14px 37px;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 90%;
+    font-weight: 800
+}
+
+.busbutton2:hover {
+    background-color: #1b9bff;
+    color: white;
+}
+
+.trainbutton2 {
+    background-color: white;
+    border: none;
+    color: #ff3832;
+    padding: 45px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: -6px 37px;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 90%;
+    font-weight: 800;
+}
+
+.trainbutton2:hover {
+    background-color: #ff3832;
+    color: white;
+}
+
+.hotelbutton2 {
+    background-color: white;
+    border: none;
+    color: #00db00;
+    padding: 45px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 14px 37px;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 90%;
+    font-weight: 800
+}
+
+.hotelbutton2:hover {
+    background-color: #00db00;
+    color: white;
+}
+
+.flightbutton2 {
+    background-color: white;
+    border: none;
+    color: #8d9699;
+    padding: 45px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: -6px 37px;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 90%;
+    font-weight: 800
+}
+
+.flightbutton2:hover {
+    background-color: #8d9699;
+    color: white;
+}
+
+.serviceprovider2 {
+    background-color: white;
+    border: none;
+    color: #F012BE;
+    padding: 45px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 14px 37px;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 90%;
+    font-weight: 800
+}
+
+.serviceprovider2:hover {
+    background-color: #F012BE;
+    color: white;
+}
+
+.bussscontactss {
+    background-image: url("Traveloka-Bus-Product-EN-Ads.jpg");
+    background-color: #0082e6;
+    height: 570px;
+    top: -5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.4;
+    background-attachment: fixed;
+}
+
+.bussscontactss1 {
+    background-image: url("Evolution-of-Volvo-buses.png");
+    background-color: #0082e6;
+    height: 1060px;
+    top: -5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.4;
+    background-attachment: fixed;
+}
+
+.formhad1 {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    width: 25%;
+    padding: 10px 0px;
+    /* margin-bottom: 15px;*/
+    padding-bottom: 50px;
+}
+
+
+/*.busss {
+    width: 100%;
+    height: 140px;
+    padding: 22px 26.4583333333cm 69px 40px;
+    padding-left: -22px;
+    margin: 18px 70px;
+    box-sizing: border-box;
+    border: none;
+    display: flex;
+    /* padding: 22px 0 173px 2px;
+}
+
+.busss1 {
+    width: 100%;
+    height: 140px;
+    padding: 22px 1000px 69px 40px;
+    padding-left: -22px;
+    margin: 18px 70px;
+    box-sizing: border-box;
+    border: none;
+    display: flex;
+    /* padding: 22px 0 173px 2px;
+}
+
+.cityico {
+    padding: 26px 16px 20px 10px;
+    background: white;
+    color: black;
+    min-width: 50px;
+    text-align: center;
+    border: transparent;
+}*/
+
+.busss {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.cityico {
+    padding: 10px;
+    background: white;
+    color: black;
+    min-width: 50px;
+    text-align: center;
+}
+
+.busarrange {
+    width: 100%;
+    padding: 10px;
+    border: unset;
+    outline: none;
+}
+
+.busarrange:focus {
+    border: 2px solid dodgerblue;
+}
+
+.comarrange {
+    width: 100%;
+    padding: 10px;
+    border: unset;
+    outline: none;
+}
+
+.comarrange:focus {
+    border: 2px solid dodgerblue;
+}
+
+.loginconnn {
+    background-image: url("Desert-Canyon-Cartoon-iPhone-6-Plus-Wallpaper.png");
+    background-color: #0082e6;
+    height: 570px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.4;
+    background-attachment: fixed;
+}
+
+.logarrange {
+    width: 100%;
+    padding: 10px 35px;
+    margin: 0px 23px 0px 12px;
+    border: unset;
+    outline: none;
+}
+
+.chat {
+    overflow: hidden;
+    background-color: white;
+}
+
+
+/* Navbar links */
+
+.chat a {
+    float: right;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 20px 23px 20px 12px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 99;
+}
+
+.chat a:hover {
+    background-color: #1b9bff;
+    color: white;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 99;
+}
+
+.chaticon {
+    width: 15px;
+    height: 155px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 70px 100px;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    z-index: 99;
+}
+
+.nobus {
+    width: 75px;
+    height: 155px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 98px 191px;
+    position: fixed;
+    bottom: 131px;
+    right: 450px;
+}
+
+#resp-table-caption {
+    display: table-caption;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.busbutton {
+    background-color: transparent;
+    border: none;
+    color: #1b9bff;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.busbutton1 {
+    background-color: transparent;
+    color: transparent;
+    border: 2px solid transparent;
+    padding: 10px 24px;
+}
+
+.busbutton1:hover {
+    background-color: white;
+    color: #1b9bff;
+}
