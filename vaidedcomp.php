@@ -5,10 +5,11 @@ mysqli_select_db($con,'allbook');
 $emails = $_POST['emails'];
 $psws = $_POST['psws'];
 $companyname = $_POST['companyname'];
-$s ="select * from companyregs where emails = '$emails' &&  psws = '$psws' && companyname = '$companyname'";
+//$psws = md5($psws);
+$s ="select * from companyregs where emails = '$emails' &&  psws = '$psws' && companyname='$companyname'";
 $result=mysqli_query($con,$s);
 $num=mysqli_num_rows($result);
-if($num==1){
+if($num>=1){
     echo '<script>alert("Thanks for login")</script>';
     echo "<meta http-equiv='refresh' content='0; url=companyservices.html' />";
 }
